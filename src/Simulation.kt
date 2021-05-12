@@ -1,3 +1,9 @@
+import rockets.Rocket
+import rockets.RocketU1
+import rockets.RocketU2
+import utility.FileReader
+import utility.Item
+
 class Simulation {
 
     private fun loadItem(path: String) : ArrayList<Item> {

@@ -23,4 +23,5 @@ fun runMarsSimulation() {
 
     println(MessageFormat.format(u1TotalCost, totalCostU1Rockets.toString()))
     println(MessageFormat.format(u2TotalCost, totalCostU2Rockets.toString()))
+    println(MessageFormat.format(rocketTypeLowerCost, if(totalCostU1Rockets<totalCostU2Rockets){"U1"} else {"U2"}))
 }

@@ -1,3 +1,7 @@
+package rockets
+
+import utility.Item
+
 open class Rocket(
     val cost: Int,
     val rocketWeight: Int,

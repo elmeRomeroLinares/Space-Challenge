@@ -1,3 +1,5 @@
+package rockets
+
 import kotlin.random.Random
 
 class RocketU2: Rocket(u2Price, u2Weight, u2MaxCargoWeight, u2InitialWeight) {
@@ -11,11 +13,11 @@ class RocketU2: Rocket(u2Price, u2Weight, u2MaxCargoWeight, u2InitialWeight) {
 
     override fun launch(): Boolean {
         val u2LaunchExplosionChance = 0.04 * currentWeight/(u2MaxCargoWeight)
-        return u2LaunchExplosionChance < Random.nextDouble()
+        return u2LaunchExplosionChance < Random.nextDouble(until = 0.1)
     }
 
     override fun land(): Boolean {
         val u2LandExplosionChance = 0.08 * currentWeight/(u2MaxCargoWeight)
-        return u2LandExplosionChance < Random.nextDouble()
+        return u2LandExplosionChance < Random.nextDouble(until = 0.1)
     }
 }
