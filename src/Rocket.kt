@@ -1,8 +1,8 @@
-import model.Item
-
-class Rocket(
-    val cost: Int, val rocketWeight: Int,
-    val maxWeight:Int, var currentWeight: Int
+open class Rocket(
+    val cost: Int,
+    val rocketWeight: Int,
+    val maxWeight:Int,
+    var currentWeight: Int,
 ): SpaceShip {
     override fun launch(): Boolean {
         return true
